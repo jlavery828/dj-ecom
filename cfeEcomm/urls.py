@@ -4,7 +4,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url
-from .views import home_page, about_page, contact_page, login_page
+from .views import home_page, about_page, contact_page, login_page, register_page
 
 # from products.views import (
 #     ProductListView, 
@@ -22,7 +22,8 @@ urlpatterns = [
     path('about/', about_page, name='about'),
     path('contact/', contact_page, name='contact'),
     path('login/', login_page, name='login'),
-    path('products/', include("products.urls")),
+    path('register/', register_page, name='register'),
+    path('products/', include("products.urls", namespace='products')),
     # path('featured/', ProductFeaturedListView.as_view(), name='featured'),
     # url(r'^featured/(?P<pk>\d+)/$', ProductFeaturedDetailView.as_view()),
     # path('products/', ProductListView.as_view(), name='products'),

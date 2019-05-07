@@ -7,7 +7,9 @@ from .views import (
     ProductDetailSlugView,
 )
 
+app_name = 'products'
+
 urlpatterns = [
-    path('', ProductListView.as_view(), name='products'),
-    url(r'^(?P<slug>[\w-]+)/$', ProductDetailSlugView.as_view()),
+    path('', ProductListView.as_view(), name='list'),
+    url(r'^(?P<slug>[\w-]+)/$', ProductDetailSlugView.as_view(), name='detail'),
 ]

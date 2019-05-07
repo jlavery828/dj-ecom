@@ -3,13 +3,13 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
-#from .forms import ContactForm, LoginForm
+from .forms import ContactForm
 
 def contact_page(request):
     contact_form = ContactForm(request.POST or None)
     context = {
         "title": "Contact",
-        "form": contact_form
+        "form": contact_form,
     }
     if contact_form.is_valid():
         print(contact_form.cleaned_data)
