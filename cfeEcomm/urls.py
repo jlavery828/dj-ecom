@@ -24,6 +24,7 @@ urlpatterns = [
     path('login/', login_page, name='login'),
     path('register/', register_page, name='register'),
     path('products/', include("products.urls", namespace='products')),
+    path('search/', include("search.urls", namespace='search')),
     # path('featured/', ProductFeaturedListView.as_view(), name='featured'),
     # url(r'^featured/(?P<pk>\d+)/$', ProductFeaturedDetailView.as_view()),
     # path('products/', ProductListView.as_view(), name='products'),
