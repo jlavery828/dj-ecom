@@ -20,24 +20,6 @@ def contact_page(request):
         # print(request.POST.get('content'))
     return render(request, "contact/view.html", context)
 
-def login_page(request):
-    if request.method == 'POST':
-        form = AuthenticationForm(data=request.POST)
-        if form.is_valid():
-            #log in the user
-            user = form.get_user()
-            login(request, user)
-            if 'next' in request.POST:
-                return redirect(request.POST.get('next'))
-            return redirect('/')
-    else:
-        form = AuthenticationForm()
-    return render(request, 'auth/form.html', {'form': form})
-
-def register_page(request):
-
-    return (request, "auth/register.html", {})
-
 def home_page(request):
     context = {
         "title": "Hello World!"

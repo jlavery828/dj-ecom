@@ -2,10 +2,13 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from django.contrib import admin
+from django.contrib.auth.views import LogoutView
 from django.urls import path, include
 from django.conf.urls import url
 
-from .views import home_page, about_page, contact_page, login_page, register_page
+from accounts.views import login_page, register_page, guest_register_view
+from addresses.views import checkout_address_create_view, checkout_address_reuse_view
+from .views import home_page, about_page, contact_page
 
 
 urlpatterns = [
@@ -14,6 +17,10 @@ urlpatterns = [
     path('about/', about_page, name='about'),
     path('contact/', contact_page, name='contact'),
     path('login/', login_page, name='login'),
+    path('checkout/address/create/', checkout_address_create_view, name='checkout_address_create'),
+    path('checkout/address/reuse/', checkout_address_reuse_view, name='checkout_address_reuse'),
+    path('register/guest/', guest_register_view, name='guest_register'),
+    path('logout/', LogoutView.as_view(), name='logout'),
     path('cart/', include("carts.urls", namespace='cart')),
     path('register/', register_page, name='register'),
     path('products/', include("products.urls", namespace='products')),
