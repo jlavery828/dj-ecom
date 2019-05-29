@@ -1,0 +1,86 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "title": "T-shirt",
+        "slug": "t-shirt",
+        "description": "This is my t-shirt",
+        "price": "39.99",
+        "image": "",
+        "featured": false,
+        "active": true,
+        "timestamp": "2019-05-06T13:13:00.858Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "title": "hat",
+        "slug": "hat",
+        "description": "this is an awesome hat",
+        "price": "39.99",
+        "image": "products/11148206/11148206.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2019-05-06T13:13:00.858Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "title": "Computer",
+        "slug": "supercomputer",
+        "description": "Super AI comp00tr",
+        "price": "39999999.99",
+        "image": "",
+        "featured": true,
+        "active": true,
+        "timestamp": "2019-05-06T13:13:00.858Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "title": "T-shirt",
+        "slug": "43542",
+        "description": "another tshirt",
+        "price": "29.99",
+        "image": "",
+        "featured": false,
+        "active": true,
+        "timestamp": "2019-05-06T13:13:00.858Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "title": "T-shirt",
+        "slug": "t-shirt-gvz3",
+        "description": "asdf",
+        "price": "39.99",
+        "image": "",
+        "featured": false,
+        "active": true,
+        "timestamp": "2019-05-06T13:13:00.858Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "title": "Lorem Ipsum",
+        "slug": "lorem-ipsum",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum lacus non volutpat ornare. Pellentesque sit amet quam porttitor, finibus nibh pulvinar, varius nisl. Suspendisse hendrerit turpis sit amet justo malesuada, sit amet egestas erat pellentesque. Donec dictum pulvinar ligula, nec porttitor orci feugiat vitae. Suspendisse lobortis urna aliquam tellus luctus finibus. Donec vehicula enim sit amet risus semper, vel maximus nunc finibus. Integer egestas tincidunt ipsum. Nunc scelerisque ligula vel nisl hendrerit finibus.\r\n\r\nIn tempus nisi nec tempus sollicitudin. Curabitur blandit, mi non dapibus suscipit, ligula quam dapibus ligula, rhoncus faucibus turpis nibh quis sem. Sed blandit augue lacus, quis feugiat dolor fringilla eget. In hac habitasse platea dictumst. Cras tempus vestibulum arcu, eu sodales urna. Ut posuere felis elit, quis suscipit tellus volutpat a. Donec fermentum lorem a urna vulputate, vitae cursus eros semper. Nulla erat nibh, mollis vitae sollicitudin id, sagittis quis enim. Proin non lectus id justo condimentum vehicula id quis nisl. In aliquam posuere aliquam.\r\n\r\nQuisque tortor nisi, posuere vel neque id, feugiat varius tellus. Vestibulum sed turpis vitae tortor malesuada bibendum ut eget felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla neque augue, tincidunt eleifend faucibus ac, fermentum ornare magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent pharetra augue eu ex accumsan faucibus. Nam eget est maximus, rutrum ipsum sed, hendrerit velit. In ut aliquet lacus. Vivamus lobortis volutpat quam, eget ullamcorper nisi semper eu. Suspendisse ac sodales libero. Morbi vitae dolor odio. Sed sit amet turpis felis.\r\n\r\nUt ultricies aliquet erat, nec pulvinar diam venenatis id. Nam nec tincidunt lectus. Maecenas a magna sagittis, imperdiet turpis eget, varius diam. Praesent semper eleifend leo, id efficitur sem tincidunt in. Mauris nunc justo, sollicitudin eu consectetur quis, viverra eget sapien. Proin pulvinar eget nibh in vestibulum. Mauris blandit porta arcu eu consectetur.\r\n\r\nVestibulum eleifend, libero in hendrerit fermentum, odio eros placerat purus, sit amet pharetra mauris neque sed est. Sed ipsum purus, efficitur vitae libero non, placerat tempor ligula. Duis lobortis aliquet magna. Sed neque urna, molestie sit amet ornare vel, efficitur nec sem. Sed aliquam, nisl ut aliquet aliquet, nisi dui dignissim urna, sed sodales ligula arcu eget nisi. Vestibulum auctor ipsum id suscipit consequat. Duis mauris turpis, sagittis nec mi ut, consequat sodales ligula. Nunc fringilla scelerisque sem vel dignissim.",
+        "price": "1.99",
+        "image": "",
+        "featured": false,
+        "active": true,
+        "timestamp": "2019-05-06T13:13:00.858Z"
+    }
+}
+]
