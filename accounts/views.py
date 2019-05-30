@@ -5,9 +5,11 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.utils.http import is_safe_url
 
+from accounts.signals import user_logged_in
 from cfeEcomm.mixins import NextUrlMixin, RequestFormAttachMixin
 from .forms import LoginForm, GuestForm, RegisterForm
 from .models import GuestEmail
+from .signals import user_logged_in
 
 def guest_register_view(request):
     form = GuestForm(request.POST or None)
@@ -67,3 +69,4 @@ class RegisterView(CreateView):
 #     else:
 #         form = AuthenticationForm()
 #     return render(request, 'accounts/login.html', {'form': form})
+
