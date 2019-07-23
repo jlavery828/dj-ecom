@@ -3,7 +3,7 @@ import os
 from django.db import models
 from django.db.models.signals import pre_save, post_save
 from django.urls import reverse
-from cfeEcomm.utils import unique_slug_generator
+from djEcomm.utils import unique_slug_generator
 from django.db.models import Q
 
 def get_filename_ext(filepath):

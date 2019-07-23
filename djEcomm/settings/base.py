@@ -8,7 +8,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '&68tdpowd#-3fz_-%czw#rjb^quj8aefh4djkd8^9+))s3y_*j'
+SECRET_KEY = '-%64c3f9)n65#qgkam2g_hgs8%a^2#_l9(n$*iqpqyypf$2$wg'  #DO droplet secret_key
+#SECRET_KEY = '&68tdpowd#-3fz_-%czw#rjb^quj8aefh4djkd8^9+))s3y_*j'  #original secret_key
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -91,6 +92,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'djEcomm.wsgi.application'
+#WSGI_APPLICATION = 'djEcomm.wsgi.application'
 
 
 # Database

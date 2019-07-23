@@ -5,7 +5,7 @@ from django.db.models.signals import pre_save, post_save
 from addresses.models import Address
 from billing.models import BillingProfile
 from carts.models import Cart
-from cfeEcomm.utils import unique_order_id_generator
+from djEcomm.utils import unique_order_id_generator
 
 
 ORDER_STATUS_CHOICES = (
@@ -15,7 +15,23 @@ ORDER_STATUS_CHOICES = (
     ('refunded', 'Refunded'),
 )
 
+
+class OrderManagerQuerySet(models.query.QuerySet):
+    def by_billing_profile(self, request):
+        billing_profile = BillingProfile.objects.new_or_get(self.request)
+        return self.get_queryset().filter(billing_profile=billing_profile)
+
+    def by_request(self, request):
+        billing_profile, created = BillingProfile.objects.new_or_get(request)
+        return self.filter(billing_profile=billing_profile)
+
 class OrderManager(models.Manager):
+    def get_queryset(self):
+        return OrderManagerQuerySet(self.model, using=self._db)
+
+    def by_request(self, request):
+        return self.get_queryset().by_request(request)
+
     def new_or_get(self, billing_profile, cart_obj):
         created = False
         qs = self.get_queryset().filter(

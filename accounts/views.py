@@ -11,7 +11,7 @@ from django.shortcuts import render,redirect
 from django.utils.http import is_safe_url
 from django.utils.safestring import mark_safe
 
-from cfeEcomm.mixins import NextUrlMixin, RequestFormAttachMixin
+from djEcomm.mixins import NextUrlMixin, RequestFormAttachMixin
 from .forms import LoginForm, RegisterForm, GuestForm, ReactivateEmailForm, UserDetailChangeForm
 from .models import GuestEmail, EmailActivation
 from .signals import user_logged_in
@@ -107,8 +107,6 @@ class RegisterView(CreateView):
     form_class = RegisterForm
     template_name = 'accounts/register.html'
     success_url = '/login/'
-
-
 
 
 class UserDetailUpdateView(LoginRequiredMixin, UpdateView):
